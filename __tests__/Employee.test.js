@@ -14,3 +14,7 @@ test('Tests if employee has an id', () => {
 test('Tests if employee has email', () => {
     expect(testEmployee.email).toBe('johndoe@email.com')
 })
+
+test('Tests if role is "Employee"', () => {
+    expect(testEmployee.getRole()).toBe('Employee')
+})
