@@ -26,12 +26,12 @@ function generateCard(employees) {
                 .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Office Number: ${employee.getON()}`);
                 break;
             case 'Engineer':
-                employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `☕ ${employee.getRole()}`)
+                employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🔧 ${employee.getRole()}`)
                 .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Github: ${employee.getGithub()}`);
                 break;
             case 'Intern':
-                employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `☕ ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `School ${employee.getSchool()}`)
+                employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🏫 ${employee.getRole()}`)
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `School: ${employee.getSchool()}`)
                 break;
         }
     }
