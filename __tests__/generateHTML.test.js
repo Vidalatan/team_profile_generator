@@ -5,7 +5,7 @@ const Intern = require("../lib/Intern");
 const generateHTML = require('../src/generateHTML')
 
 const testManager = new Manager('John', 0, 'johnj@email.com', 1)
-const testEngineer = new Engineer('Avery', 1, 'averya@email.com', 'https://github.com/averya')
+const testEngineer = new Engineer('Avery', 1, 'averya@email.com', 'averya')
 const testIntern = new Intern('Jessica', 2, 'jessicaj@email.com', 'SMU')
 
 // put one of each through the generateCard method
@@ -34,7 +34,7 @@ const expectedEngineer =
     <ul class="list-group list-group-flush p-3 bg-secondary">
         <li class="list-group-item">ID: 1</li>
         <li class="list-group-item">Email: averya@email.com</li>
-        <li class="list-group-item">Github: https://github.com/averya</li>
+        <li class="list-group-item">Github: <a href="https://github.com/averya">averya</a></li>
     </ul>
 </div>
 `;

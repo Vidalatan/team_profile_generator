@@ -61,7 +61,7 @@ function generateCard(employees) {
                 break;
             case 'Engineer':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🔧 ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Github: ${employee.getGithub()}`);
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>`);
                 break;
             case 'Intern':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🏫 ${employee.getRole()}`)
