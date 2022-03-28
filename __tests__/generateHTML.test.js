@@ -22,7 +22,8 @@ const expectedManager =
         <li class="list-group-item">Email: johnj@email.com</li>
         <li class="list-group-item">Office Number: 1</li>
     </ul>
-</div>`;
+</div>
+`;
 
 const expectedEngineer = 
 `<div class="card shadow mx-3 p-0" style="width: 18rem;">
@@ -35,7 +36,8 @@ const expectedEngineer =
         <li class="list-group-item">Email: averya@email.com</li>
         <li class="list-group-item">Github: https://github.com/averya</li>
     </ul>
-</div>`;
+</div>
+`;
 
 const expectedIntern = 
 `<div class="card shadow mx-3 p-0" style="width: 18rem;">
@@ -48,7 +50,8 @@ const expectedIntern =
         <li class="list-group-item">Email: jessicaj@email.com</li>
         <li class="list-group-item">School: SMU</li>
     </ul>
-</div>`;
+</div>
+`;
 
 test('Test if card is added to the manager class through genHTML function', () => {
     expect(testManager.card).toBe(expectedManager)
