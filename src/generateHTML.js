@@ -28,13 +28,13 @@ const boilerEnd =
 function writeHTML (employees) {
     let temp = '';
 
-    for (employee of employee) {
+    for (employee of employees) {
         temp += employee.card
     }
 
     const data = `${boilerStart}+${temp}+${boilerEnd}`
 
-    fs.writeFile('../dist/index.html', data, err => err ? console.error(err) : console.log('Success! HTML file created at ../dist/'))
+    fs.writeFile('./dist/index.html', data, err => err ? console.error(err) : console.log('Success! HTML file created at ../dist/'))
 }
 
 
@@ -52,23 +52,23 @@ const cardTemplate =
 </div>
 `;
 
-function generateCard(employees) {
+function generateCards(employees) {
     for (employee of employees) {
         switch (employee.getRole()) {
             case 'Manager':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `☕ ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Office Number: ${employee.getON()}`);
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Office Number: ${employee.getON()}`);
                 break;
             case 'Engineer':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🔧 ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>`);
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>`);
                 break;
             case 'Intern':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🏫 ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: ${employee.email}`).replace('%OTHER%', `School: ${employee.getSchool()}`)
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `School: ${employee.getSchool()}`)
                 break;
         }
     }
 }
 
-module.exports = {generateCard}
+module.exports = {generateCards, writeHTML}
