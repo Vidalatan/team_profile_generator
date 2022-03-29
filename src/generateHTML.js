@@ -32,7 +32,7 @@ function writeHTML (employees) {
         temp += employee.card
     }
 
-    const data = `${boilerStart}+${temp}+${boilerEnd}`
+    const data = `${boilerStart} ${temp} ${boilerEnd}`
 
     fs.writeFile('./dist/index.html', data, err => err ? console.error(err) : console.log('Success! HTML file created at ../dist/'))
 }

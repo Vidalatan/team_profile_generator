@@ -298,7 +298,5 @@ test('Test if card is added to the intern class through genHTML function', () =>
 
 ![Finished Project Image](./assets/images/FinishedProductImage.png)
 
-Link to live [Team Profile Generator](https://{git-username}.github.io/{project-name})
-
-Link to [Code Repository](https://github.com/{git-username}/{project-name})
+Link to [Code Repository](https://github.com/vidalatan/team_profile_generator)
 
