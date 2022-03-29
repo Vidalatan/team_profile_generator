@@ -102,7 +102,7 @@ Tests were created for each of the four classes created. Each test was designed 
 Here is a video demonstrating the use of the Team Profile Generator
 
 
-https://user-images.githubusercontent.com/59946423/160685702-6065be62-6506-4714-9613-4a5bb0fdd262.mp4
+https://user-images.githubusercontent.com/59946423/160686004-19bb0a3b-9cf5-4cd4-aa5b-961e4d1df95d.mp4
 
 
 ### Below are the individual tests performed: 
