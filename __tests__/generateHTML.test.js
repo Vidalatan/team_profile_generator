@@ -9,7 +9,7 @@ const testEngineer = new Engineer('Avery', 1, 'averya@email.com', 'averya')
 const testIntern = new Intern('Jessica', 2, 'jessicaj@email.com', 'SMU')
 
 // put one of each through the generateCard method
-generateHTML.generateCard([testManager, testEngineer, testIntern])
+generateHTML.generateCards([testManager, testEngineer, testIntern])
 
 const expectedManager = 
 `<div class="card shadow mx-3 p-0" style="width: 18rem;">
