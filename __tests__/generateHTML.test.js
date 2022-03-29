@@ -19,7 +19,7 @@ const expectedManager =
     </div>
     <ul class="list-group list-group-flush p-3 bg-secondary">
         <li class="list-group-item">ID: 0</li>
-        <li class="list-group-item">Email: <a href = "mailto:johnj@email.com">johnj@email.com</a></li>
+        <li class="list-group-item">Email: <a href="mailto:johnj@email.com">johnj@email.com</a></li>
         <li class="list-group-item">Office Number: 1</li>
     </ul>
 </div>
@@ -33,8 +33,8 @@ const expectedEngineer =
     </div>
     <ul class="list-group list-group-flush p-3 bg-secondary">
         <li class="list-group-item">ID: 1</li>
-        <li class="list-group-item">Email: <a href = "mailto:averya@email.com">averya@email.com</a></li>
-        <li class="list-group-item">Github: <a href="https://github.com/averya">averya</a></li>
+        <li class="list-group-item">Email: <a href="mailto:averya@email.com">averya@email.com</a></li>
+        <li class="list-group-item">Github: <a href="https://github.com/averya" target="_blank">averya</a></li>
     </ul>
 </div>
 `;
@@ -47,7 +47,7 @@ const expectedIntern =
     </div>
     <ul class="list-group list-group-flush p-3 bg-secondary">
         <li class="list-group-item">ID: 2</li>
-        <li class="list-group-item">Email: <a href = "mailto:jessicaj@email.com">jessicaj@email.com</a></li>
+        <li class="list-group-item">Email: <a href="mailto:jessicaj@email.com">jessicaj@email.com</a></li>
         <li class="list-group-item">School: SMU</li>
     </ul>
 </div>

@@ -57,15 +57,15 @@ function generateCards(employees) {
         switch (employee.getRole()) {
             case 'Manager':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `☕ ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Office Number: ${employee.getON()}`);
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href="mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Office Number: ${employee.getON()}`);
                 break;
             case 'Engineer':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🔧 ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>`);
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href="mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `Github: <a href="https://github.com/${employee.getGithub()}" target="_blank">${employee.getGithub()}</a>`);
                 break;
             case 'Intern':
                 employee.card = cardTemplate.replace('%NAME%', `Name: ${employee.name}`).replace('%ROLE%', `🏫 ${employee.getRole()}`)
-                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href = "mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `School: ${employee.getSchool()}`)
+                .replace('%ID%', `ID: ${employee.id}`).replace('%EMAIL%', `Email: <a href="mailto:${employee.email}">${employee.email}</a>`).replace('%OTHER%', `School: ${employee.getSchool()}`)
                 break;
         }
     }
